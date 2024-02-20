@@ -1,1 +1,1 @@
-Proyecto de web para restaurante/pizeria usando solo HTML y CSS
+Proyecto web para restaurante/pizeria usando solo HTML y CSS
