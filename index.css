@@ -144,6 +144,7 @@ main {
   margin: 60px;
   padding: 15px;
   position: relative;
+
 }
 
 .caja-productos {
@@ -182,24 +183,26 @@ main h2 {
 
 .caja-precio {
   position: absolute;
-  width: 100%;
+  width: 30%;
   margin: 0;
   padding: 0;
-  left: 0;
   bottom: 15px;
+  left:50%;
+  transform: translate(-50%);
+  display: flex;
+  border-radius: 5px;
 }
 
 .precio-producto {
-  margin-bottom: 15px;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   line-height: 1.8em;
   text-align: center;
   width: 100%;
   bottom: 4px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 1400) {
