@@ -1,0 +1,233 @@
+body {
+  background-color: black;
+  color: white;
+  background-image: url(Imagenes/pizza-fondo.png);
+  background-size: auto;
+}
+
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Negro con 50% de transparencia */
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.caja-nav {
+  top: 0;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.lista-nav {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.botones-nav {
+  display: inline-block;
+  margin: 10px 30px;
+  width: 100px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.imagen-principal {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+#titulo-principal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 650%;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 3;
+}
+
+#imagen-principal {
+  width: 90vh;
+  min-width: 300px;
+
+}
+
+
+
+.rectangulo-principal{
+  position: absolute;
+  background-color: rgba(250, 0, 0, 0.65); /* Negro con 50% de transparencia */
+  width: 100%;
+  height: 10em;
+  top: 41%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#titulo-piza{
+  margin-top: 150px;
+  text-decoration:underline;
+  text-underline-offset: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 100px auto;
+  flex-wrap: wrap;
+  background-color: ;
+}
+
+#titulo-piza{
+  text-align: center;
+  font-size: 600%;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 5;
+  
+  
+}
+
+.productos {
+  width: 22%;
+  background-color: rgba(172, 52, 52, 0.686); 
+  border-radius: 10px;/* Negro con 50% de transparencia */
+  height: 620px;
+  min-width: 250px;
+  margin: 60px;
+  padding: 15px;
+  position: relative;
+}
+
+.caja-productos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+main h2{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-top: 5px;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.imagen-producto {
+  width: 80%;
+  margin: 50px 0;
+}
+
+.descripcion-producto {
+  margin-bottom: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.8em;
+  width: 90%;
+}
+
+.caja-precio{
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 15px;
+
+}
+
+.precio-producto {
+  margin-bottom: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.8em;
+  text-align: center;
+  width: 100%;
+  bottom: 4px;
+  font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1400) {
+  #titulo-principal, #titulo-piza {
+    font-size: 70px; /* Disminuir el tamaño, de la fuente para dispositivos móviles */
+  }
+  .rectangulo-principal{
+    top: 35%;
+  }
+ 
+}
+
+@media screen and (max-width: 700px) {
+  .botones-nav{
+    display: block;
+  }
+  nav{
+    height: auto;
+    margin: 5px;
+  }
+  .botones-nav{
+    margin: 20px;
+  }
+  .imagen-principal{
+    top: 10vh;
+    margin-bottom: 40vh;
+  }
+
+}
