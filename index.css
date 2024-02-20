@@ -5,8 +5,6 @@ body {
   background-size: auto;
 }
 
-
-
 header {
   display: flex;
   flex-direction: column;
@@ -30,20 +28,19 @@ nav {
   flex-wrap: wrap;
 }
 
-#logo{
+#logo {
   margin-left: 40px;
   font-size: 40px;
   font-family: "Fredericka the Great", serif;
   font-weight: 400;
   font-style: normal;
-  text-decoration: line-through; 
+  text-decoration: line-through;
   text-decoration-color: red;
   text-decoration-thickness: 2px;
 }
 
 .caja-nav {
   top: 0;
-  width: 40%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -53,8 +50,6 @@ nav {
 .lista-nav {
   margin: 0;
   padding: 0;
-
-
 }
 
 .botones-nav {
@@ -75,20 +70,20 @@ a {
 }
 
 .imagen-principal {
-  position: relative;
   width: 100%;
-  padding: 40px;
+  height: 90vh;
   box-sizing: border-box;
-  min-height: 40vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  background-image: url(Imagenes/pizacheta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 
 #titulo-principal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   font-size: 650%;
   font-family: "Fredericka the Great", serif;
@@ -100,13 +95,9 @@ a {
 #imagen-principal {
   width: 90vh;
   min-width: 300px;
-
 }
 
-
-
-.rectangulo-principal{
-  position: absolute;
+.rectangulo-principal {
   background-color: rgba(250, 0, 0, 0.65); /* Negro con 50% de transparencia */
   width: 100%;
   height: 10em;
@@ -117,11 +108,12 @@ a {
   justify-content: center;
 }
 
-
-#titulo-piza{
+#titulo-piza {
   margin-top: 150px;
-  text-decoration:underline;
+  text-decoration: underline;
   text-underline-offset: 10px;
+  text-decoration-thickness: 1.5px;
+
 }
 
 main {
@@ -129,27 +121,24 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 100px auto;
   flex-wrap: wrap;
-  background-color: ;
 }
 
-#titulo-piza{
+#titulo-piza {
   text-align: center;
   font-size: 600%;
   font-family: "Fredericka the Great", serif;
   font-weight: 400;
   font-style: normal;
   z-index: 5;
-  
-  
 }
 
 .productos {
   width: 22%;
-  background-color: rgba(172, 52, 52, 0.686); 
-  border-radius: 10px;/* Negro con 50% de transparencia */
+  background-color: rgba(172, 52, 52, 0.686);
+  border-radius: 10px; /* Negro con 50% de transparencia */
   height: 620px;
   min-width: 250px;
   margin: 60px;
@@ -157,15 +146,14 @@ main {
   position: relative;
 }
 
-.caja-productos{
+.caja-productos {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-main h2{
+main h2 {
   font-family: "Indie Flower", cursive;
   font-weight: 400;
   font-style: normal;
@@ -174,7 +162,6 @@ main h2{
   font-family: "Fredericka the Great", serif;
   font-weight: 400;
   font-style: normal;
-  
 }
 
 .imagen-producto {
@@ -192,14 +179,13 @@ main h2{
   width: 90%;
 }
 
-.caja-precio{
+.caja-precio {
   position: absolute;
   width: 100%;
   margin: 0;
   padding: 0;
   left: 0;
   bottom: 15px;
-
 }
 
 .precio-producto {
@@ -215,44 +201,44 @@ main h2{
   font-size: 20px;
 }
 
-
-
-
 @media screen and (max-width: 1400) {
-  #titulo-principal, #titulo-piza {
+  #titulo-principal,
+  #titulo-piza {
     font-size: 70px; /* Disminuir el tamaño, de la fuente para dispositivos móviles */
   }
-  .rectangulo-principal{
+  .rectangulo-principal {
     top: 35%;
   }
- 
 }
 
-@media screen and (max-width: 700px) {
-  .botones-nav{
+@media screen and (max-width: 780px) {
+  #titulo-principal,
+  #titulo-piza {
+    font-size: 65px; /* Disminuir el tamaño, de la fuente para dispositivos móviles */
+  }
+
+  .botones-nav {
     display: block;
   }
-  header{
+  header {
     background-color: rgb(0, 0, 0); /* Negro con 50% de transparencia */
-
   }
-  nav{
+  nav {
     flex-direction: column;
     justify-content: center;
     height: auto;
-    margin-top:20px;
-
+    margin-top: 20px;
   }
-  #logo{
+  #logo {
     margin-left: 0px;
-
   }
-  .botones-nav{
+  .botones-nav {
     margin: 20 0px;
   }
-  .imagen-principal{
+  .imagen-principal {
     top: 10vh;
-    margin-bottom: 40vh;
   }
 
+  
 }
+
