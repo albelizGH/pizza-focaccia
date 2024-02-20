@@ -240,17 +240,15 @@ main h2{
     flex-direction: column;
     justify-content: center;
     height: auto;
-    margin: 10px;
     margin-top:20px;
 
   }
   #logo{
     margin-left: 0px;
-    
 
   }
   .botones-nav{
-    margin: 20px;
+    margin: 20 0px;
   }
   .imagen-principal{
     top: 10vh;
